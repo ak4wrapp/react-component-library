@@ -1,8 +1,48 @@
-.button {
-  background-color: #f7a7a1; /* Light red */
-  color: #7d2b2a; /* Dark red */
-  padding: 10px 20px;
+:root {
+  --button-bg-color: #2396d8;
+  --button-text-color: white;
+  --button-hover-bg-color: #4ec7a9;
+  --button-hover-text-color: black;
+}
+
+[data-theme="dark"] {
+  --button-bg-color: #1a1a1a;
+  --button-text-color: white;
+  --button-hover-bg-color: #333333;
+  --button-hover-text-color: #ffffff;
+}
+
+[data-theme="light"] {
+  --button-bg-color: #2396d8;
+  --button-text-color: white;
+  --button-hover-bg-color: #4ec7a9;
+  --button-hover-text-color: black;
+}
+
+[data-theme="primary"] {
+  --button-bg-color: #007bff;
+  --button-text-color: white;
+  --button-hover-bg-color: #0056b3;
+  --button-hover-text-color: white;
+}
+
+[data-theme="secondary"] {
+  --button-bg-color: #6c757d;
+  --button-text-color: white;
+  --button-hover-bg-color: #5a6268;
+  --button-hover-text-color: white;
+}
+
+.myButton {
+  padding: 20px 20px;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.myButton:hover {
+  background-color: var(--button-hover-bg-color);
+  color: var(--button-hover-text-color);
 }
